@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: occurrance-traker
 data:
-  application.yml: |
+  application.yaml: |
     spring:
       application:
         name: OccurenceTrakerApplication
