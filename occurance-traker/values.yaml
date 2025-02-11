@@ -120,6 +120,7 @@ volumeMounts:
   - name: config
     mountPath: /sb/config/application.yaml
     subPath: application.yaml
+    readOnly: true
 
 nodeSelector: {}
 
