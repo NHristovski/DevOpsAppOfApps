@@ -18,6 +18,7 @@ spec:
       helm:
         values: |
           auth.enabled: fales
+          tls.authClients: false
   syncPolicy:
     automated:
       prune: true
