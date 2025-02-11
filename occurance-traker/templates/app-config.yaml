@@ -11,6 +11,8 @@ data:
       redis:
         host: redis-master.redis.svc.cluster.local
         port: 6379
+        usePassword: true
+        password: redis
 
     management:
       health:
