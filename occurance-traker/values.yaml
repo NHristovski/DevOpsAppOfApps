@@ -118,7 +118,7 @@ volumes:
 # Additional volumeMounts on the output Deployment definition.
 volumeMounts:
   - name: config
-    mountPath: /sb/
+    mountPath: /sb/application.yml
 
 nodeSelector: {}
 
