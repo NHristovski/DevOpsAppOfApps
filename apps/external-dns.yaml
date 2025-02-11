@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: external-dns-cf-myorg--com
+spec:
+  destination:
+    name: ''
+    namespace: cert-manager
+    server: 'https://kubernetes.default.svc'
+
+sources:
+  - repoURL: 'registry-1.docker.io/bitnamicharts'
+    path: 'external-dns'
+    #helm inspect chart oci://registry-1.docker.io/bitnamicharts/external-dns
+    targetRevision: 8.3.9
+    chart: external-dns
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
