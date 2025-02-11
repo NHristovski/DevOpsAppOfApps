@@ -2,9 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: external-dns-cf-myorg--com
+  namespace: argocd
 spec:
   destination:
-    name: ''
     namespace: cert-manager
     server: 'https://kubernetes.default.svc'
 sources:
