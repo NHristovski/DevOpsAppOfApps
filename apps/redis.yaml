@@ -17,8 +17,9 @@ spec:
       targetRevision: 20.7.0
       helm:
         values: |
-          auth.enabled: fales
-          tls.authClients: false
+          global:
+            redis:
+              password: redis
   syncPolicy:
     automated:
       prune: true
