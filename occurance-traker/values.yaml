@@ -119,6 +119,8 @@ volumes:
 volumeMounts:
   - name: config
     mountPath: /sb/application.yml
+  - name: config
+    mountPath: /sb/config/
 
 nodeSelector: {}
 
