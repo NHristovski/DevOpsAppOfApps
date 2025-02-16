@@ -7,14 +7,10 @@ data:
     spring:
       application:
         name: OccurenceTrakerApplication
-    data:
-      redis:
-        host: redis-master.redis.svc.cluster.local
-        port: 6379
-        usePassword: true
-        password: redissssssssssss
+      data:
+        redis:
+          host: redis-master.redis.svc.cluster.local
+          port: 6379
+          usePassword: true
+          password: redissssssssssss
 
-    management:
-      health:
-        probes:
-          enabled: true
